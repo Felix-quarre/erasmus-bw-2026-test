@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Félix Quarré</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 560px; margin: 15vh auto; padding: 0 24px; color: #1a1a1a; }
+    h1 { margin-bottom: 8px; }
+    p { line-height: 1.5; color: #444; }
+    button { margin-top: 16px; padding: 12px 20px; font-size: 16px; border: 0; border-radius: 8px; background: #1a1a1a; color: #fff; cursor: pointer; }
+    #message { margin-top: 16px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Hi, I'm Félix Quarré</h1>
+  <p>Second-year E-Business student at EPHEC (Belgium), passionate about entrepreneurship, e-commerce and branding. Ready for the BIP week in Riga!</p>
+  <button id="hello">Say hello</button>
+  <p id="message"></p>
+  <script>
+    let clicks = 0;
+    document.getElementById('hello').addEventListener('click', () => {
+      clicks++;
+      document.getElementById('message').textContent = 'Labdien from Riga! 👋 (' + clicks + ')';
+    });
+  </script>
+</body>
+</html>
